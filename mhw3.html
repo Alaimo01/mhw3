@@ -1,0 +1,47 @@
+<html>
+
+	<head>
+		<title>Ricerca il Pokemon che più ti piace</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="mhw3.css"/> 
+		<script src="mhw3.js" defer="true"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	</head>
+	
+	<body>
+		<form name ='search_content' id='search_content'>
+			
+			<h1>●Inserisci il tipo dei pokemon che vuoi cercare:</h1>
+			<h1>●Inserisci il nome del tuo Account League of Legends per visualizzare le info
+				(provare con Angix01 se non si ha un account lol). Le apy_key riot durano 24h, di sotto 
+				è riportato il link e le credenziali per generari una key da inserire in js nella fetch della
+				function search nel caso di summoner:</h1>
+			<h1>
+				<a href="https://developer.riotgames.com/">https://developer.riotgames.com/.</a><br>
+				USER NAME: UseKey1<br> PASSWORD: Test_generate_key1
+			</h1>
+			<h1>●Cliccare 'Ricerca Canali Twitch' e premere invio per venire a conoscenza delle live attive 
+				 in questo momento<br> (lasciare il campo Contenuto vuoto):</h1>
+			
+			<label>Contenuto: <input type='text' name = 'content' id ='content'></label>	
+				
+			<select name = 'tipo' id='tipo'>
+				<option value='tipo'>Tipo Pokemon</option>
+				<option value='summoner'>Summoner</option>
+				<option value='Ricerca'>Ricerca Canali Twitch</option>
+			</select>
+			
+			<label>&nbsp;<input class="submit" type='submit'></label>
+					
+		</form>
+			
+		<article id="album-view">
+			
+		</article>
+		
+	
+		<article id="modale" class="hidden"> 
+		
+		</article>
+		
+	</body>
